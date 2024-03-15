@@ -1,0 +1,17 @@
+.titleH3 {
+	font-size: 4rem;
+	line-height: 120%;
+	color: var(--c-title-400);
+}
+
+@media (max-width: 64em) {
+	.titleH3 {
+		font-size: 4rem;
+	}
+}
+
+@media (max-width: 30em) {
+	.titleH3 {
+		font-size: 3.2rem;
+	}
+}

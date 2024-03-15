@@ -1,0 +1,18 @@
+.titleH2 {
+	font-size: 4.8rem;
+	font-weight: 500;
+	line-height: 120%;
+	color: var(--c-title-400);
+}
+
+@media (max-width: 64em) {
+	.titleH2 {
+		font-size: 4.8rem;
+	}
+}
+
+@media (max-width: 30em) {
+	.titleH2 {
+		font-size: 3.6rem;
+	}
+}
