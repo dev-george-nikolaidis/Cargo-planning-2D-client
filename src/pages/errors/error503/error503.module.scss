@@ -1,0 +1,57 @@
+/* Error404.module.scss */
+
+.errorPage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: var(--bg-body-400);
+}
+
+.errorContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 800px;
+	width: 90%;
+	background-color: var(--c-p-400);
+	box-shadow: var(--box-shadow-400);
+	border-radius: 8px;
+	padding: 20px;
+}
+
+.errorContent {
+	color: #fff;
+	flex: 1;
+	text-align: center;
+	padding: 20px;
+}
+
+.errorTitle {
+	color: #fff;
+	margin: 0;
+}
+
+.errorMessage {
+	margin: 1rem 0;
+}
+
+.backLink {
+	display: flex;
+	justify-content: center;
+}
+
+.btn {
+	height: 4rem;
+	width: 50%;
+	border: none;
+	cursor: pointer;
+	transition: 0.5s ease-in-out all;
+	background-color: var(--c-a-400);
+	font-weight: 700;
+}
+
+.btn:hover {
+	background-color: var(--c-a-500);
+	color: #fff;
+}
