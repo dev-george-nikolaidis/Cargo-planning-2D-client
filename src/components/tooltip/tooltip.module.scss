@@ -1,0 +1,81 @@
+.tooltip {
+	color: var(--c-text-400);
+	background-color: #fff;
+	padding: 1rem;
+	width: 10rem;
+	position: relative;
+}
+
+.tooltip:hover {
+	transition: 0.5 ease-in-out all;
+	cursor: pointer;
+	background-color: var(--c-a-500);
+	color: #fff;
+
+	.triangleTop {
+		border-bottom: 30px solid var(--c-a-500);
+	}
+	.triangleBottom {
+		border-top: 30px solid var(--c-a-500);
+	}
+}
+
+.triangle {
+	position: absolute;
+	width: 0;
+	height: 0;
+	z-index: -1;
+	left: 50%;
+	border-style: solid;
+	transform: translate(-50%, -50%);
+}
+
+.triangleTop {
+	top: -1rem;
+	border-right: 15px solid transparent;
+	border-left: 15px solid transparent;
+	border-bottom: 30px solid #fff;
+	border-top: 0;
+}
+
+.triangleBottom {
+	bottom: -4rem;
+
+	border-right: 15px solid transparent;
+	border-left: 15px solid transparent;
+	border-top: 30px solid #fff; /* This creates the solid part of the triangle */
+	border-bottom: 0;
+}
+
+// 1200px
+@media (max-width: 75em) {
+	.triangleTop {
+		top: -0.5rem;
+	}
+
+	.triangleBottom {
+		bottom: -3.2rem;
+	}
+}
+
+// 720px
+@media (max-width: 45em) {
+	.tooltip {
+		width: 8rem;
+	}
+	.triangleTop {
+		top: -0rem;
+	}
+
+	.triangleBottom {
+		bottom: -3rem;
+	}
+}
+
+// 480px
+@media (max-width: 30em) {
+	.tooltip {
+		width: 6.5rem;
+		padding: 0.2rem;
+	}
+}

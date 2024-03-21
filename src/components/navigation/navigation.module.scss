@@ -1,0 +1,41 @@
+.header {
+	width: 100%;
+	background-color: #ffff;
+	margin: 0 auto;
+	height: 8rem;
+	display: flex;
+}
+
+.nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 2rem;
+}
+.logo {
+	width: 4rem;
+}
+
+.navList {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.accountIcon {
+	font-size: 4rem;
+	color: var(--c-p-400);
+	cursor: pointer;
+}
+
+.orderLink {
+	display: flex;
+}
+
+@media (max-width: 45em) {
+	.logo {
+		// width: 10rem;
+	}
+}

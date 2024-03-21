@@ -1,0 +1,41 @@
+.progressBarContainer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 4rem;
+	width: 100%;
+	background-color: #ddd;
+	z-index: 2;
+}
+
+.progressBar {
+	height: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.label {
+	position: absolute;
+	font-weight: 700;
+	bottom: 4rem;
+	right: 1rem;
+}
+
+.labelSpan {
+	color: var(--c-p-400);
+}
+
+@media (max-width: 45em) {
+	.progressBarContainer {
+		height: 2rem;
+	}
+
+	.label {
+		bottom: 2rem;
+		right: 0rem;
+		font-size: 1.4rem;
+		background-color: #fff;
+		padding: 0.2rem;
+	}
+}
