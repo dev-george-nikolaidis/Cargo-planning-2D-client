@@ -1,0 +1,26 @@
+.trip {
+	position: relative;
+	min-height: 100vh;
+}
+
+.ordersWrapper {
+	position: fixed;
+	left: 1rem;
+	bottom: 40%;
+}
+
+// 720px
+@media (max-width: 45em) {
+	.ordersWrapper {
+		left: 1rem;
+		bottom: 10%;
+	}
+}
+
+// 480px
+@media (max-width: 30em) {
+	.ordersWrapper {
+		bottom: 5%;
+		left: 0;
+	}
+}

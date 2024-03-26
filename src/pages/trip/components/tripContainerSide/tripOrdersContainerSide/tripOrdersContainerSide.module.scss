@@ -1,0 +1,38 @@
+.customerContainer {
+	flex: 0, 0, auto;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: #fff;
+	font-size: 1.6rem;
+	cursor: pointer;
+	border: 1px solid #fff;
+	color: #fff;
+	transition: 0.5 ease-in-out all;
+}
+
+.customerContainer:hover {
+	// we use !important to override  inline style specificity
+	background-color: var(--c-a-500) !important;
+}
+.tooltipWrapper {
+	position: absolute;
+}
+
+// 1200px
+@media (max-width: 75em) {
+	.customerContainer {
+		font-size: 1.3rem;
+	}
+}
+// 720px
+@media (max-width: 45em) {
+	.customerContainer {
+		font-size: 1.2rem;
+	}
+}
+// 480x
+@media (max-width: 30em) {
+}

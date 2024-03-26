@@ -1,0 +1,81 @@
+.truckViewWrapper {
+	position: fixed;
+	right: 1rem;
+	bottom: 50%;
+}
+
+.truckWrapper {
+	padding-top: 14rem;
+	display: flex;
+	justify-content: center;
+}
+
+.truckContainer {
+	border: 1rem solid #0151a2;
+	display: flex;
+	z-index: 2;
+	background-color: #fff;
+}
+
+.customerContainerWrapper {
+	display: flex;
+	justify-content: flex-start;
+}
+.truckFront {
+	position: relative;
+	width: 100px;
+	margin-right: 2rem;
+	clip-path: polygon(28.87% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 46.58%);
+	background-color: #36607a9d;
+}
+
+.truckFrontText {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-weight: 700;
+	color: #fff;
+}
+
+.customerContainer {
+	display: flex;
+}
+
+// 1200px
+@media (max-width: 75em) {
+	.truckFront {
+		width: 50px;
+	}
+}
+
+// 720px
+@media (max-width: 45em) {
+	.truckWrapper {
+	}
+	.truckViewWrapper {
+		bottom: 10%;
+	}
+
+	.truckFront {
+		width: 4rem;
+	}
+
+	.truckFrontText {
+		font-size: 1.4rem;
+	}
+}
+
+@media (max-width: 30em) {
+	.truckViewWrapper {
+		position: fixed;
+		right: 0rem;
+	}
+	.truckWrapper {
+		padding-top: 10rem;
+	}
+
+	.truckFront {
+		margin-right: 0.2rem;
+	}
+}
