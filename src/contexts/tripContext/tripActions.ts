@@ -1,0 +1,13 @@
+export enum TripActionTypes {
+	FETCH_TRIP = "FETCH_TRIP",
+	FETCH_ALL_ORDERS = "FETCH_ALL_ORDERS",
+	SIFTING_PALLET = "SIFTING_PALLET",
+	SET_CURRENT_VIEW = "SET_CURRENT_VIEW",
+	SET_CURRENT_ORDER = "SET_CURRENT_ORDER",
+	SIFTING_CUSTOMER_ORDER = "SIFTING_CUSTOMER_ORDER",
+}
+
+export interface Action {
+	type: TripActionTypes;
+	payload?: any;
+}
