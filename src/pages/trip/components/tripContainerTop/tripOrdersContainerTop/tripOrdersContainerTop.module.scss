@@ -1,0 +1,24 @@
+.customerContainer {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	// grid-template-rows: auto;
+	font-size: 1.6rem;
+	cursor: pointer;
+}
+
+// 1200px
+@media (max-width: 75em) {
+}
+
+// 720px
+@media (max-width: 45em) {
+	.customerContainer {
+		grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+	}
+}
+
+// 480px
+@media (max-width: 30em) {
+	.customerContainer {
+	}
+}
